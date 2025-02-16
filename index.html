@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+            display: flex;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+        }
+        .sidebar {
+            width: 25%;
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+            border-right: 2px solid #00ff7f;
+        }
+        .sidebar h2 {
+            color: #00ff7f;
+        }
+        .sidebar a {
+            color: #00ff7f;
+            text-decoration: none;
+        }
+        .main-content {
+            width: 75%;
+            padding: 20px;
+        }
+        .navbar {
+            background-color: #00ff7f;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar a {
+            color: #121212;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .section {
+            padding: 20px;
+            border-bottom: 1px solid #00ff7f;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .project {
+            background-color: #1e1e1e;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #00ff7f;
+            transition: transform 0.3s ease;
+        }
+        .project:hover {
+            transform: scale(1.05);
+        }
+        .project a {
+            color: #00ff7f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Aadvik Mazumdar</h2>
+            <p>2nd-year CSE AIML Student</p>
+            <h3>Contact</h3>
+            <p>Email: <strong>aadvikmazumdar@gmail.com</strong></p>
+            <p>GitHub: <a href="https://github.com/aadvikmazumdar" target="_blank">github.com/aadvikmazumdar</a></p>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Navigation -->
+            <nav class="navbar">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+            </nav>
+
+            <!-- About Section -->
+            <section id="about" class="section">
+                <h2>About Me</h2>
+                <p>I am a passionate Computer Science and Engineering student specializing in AI and ML. I enjoy
+                    building innovative solutions to real-world problems using cutting-edge technologies.</p>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="section">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Machine Learning</li>
+                    <li>Deep Learning</li>
+                    <li>TensorFlow</li>
+                    <li>PyTorch</li>
+                    <li>MySQL</li>
+                    <li>PostgreSQL</li>
+                </ul>
+            </section>
+
+            <!-- Currently Learning Section -->
+            <section id="currently-learning" class="section">
+                <h2>Currently Learning</h2>
+                <ul>
+                    <li>LSTM</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                </ul>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section">
+                <h2>Projects</h2>
+                <div class="projects">
+                    <div class="project">
+                        <h3>SkillSync</h3>
+                        <p>A collaboration-based AI system that matches skills with job opportunities.</p>
+                        <a href="https://github.com/aadvikmazumdar/SkillSync" target="_blank">View on GitHub</a>
+                    </div>
+                    <div class="project">
+                        <h3>Diabetes Prediction</h3>
+                        <p>Machine learning model to predict diabetes based on patient data.</p>
+                        <a href="https://github.com/aadvikmazumdar/Diabetes_Prediction" target="_blank">View on GitHub</a>
+                    </div>
+                    <div class="project">
+                        <h3>Sonar Rock Prediction</h3>
+                        <p>Classification model to differentiate between rocks and mines using sonar data.</p>
+                        <a href="https://github.com/aadvikmazumdar/Sonar_Rock_Prediction" target="_blank">View on GitHub</a>
+                    </div>
+                    <div class="project">
+                        <h3>Car Price Prediction</h3>
+                        <p>Machine learning model to predict car prices based on various features.</p>
+                        <a href="https://github.com/aadvikmazumdar/MachineLearning/blob/main/Car_Price_Prediction.ipynb" target="_blank">View on GitHub</a>
+                    </div>
+                    <div class="project">
+                        <h3>Housing Price Prediction</h3>
+                        <p>Predicting housing prices using regression techniques.</p>
+                        <a href="https://github.com/aadvikmazumdar/MachineLearning/blob/main/housing_data.ipynb" target="_blank">View on GitHub</a>
+                    </div>
+                    <div class="project">
+                        <h3>Iris Flower Prediction</h3>
+                        <p>Classifying iris flower species using machine learning.</p>
+                        <a href="https://github.com/aadvikmazumdar/MachineLearning/blob/main/iris_flower_prediction.ipynb" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
